@@ -12,15 +12,21 @@ def index():
     result = render_template("index.html")
     return result
 
-@app.route("/")
-def page_two():
-    result = render_template("page_two.html")
+@app.route("/global")
+def global():
+    result = render_template("global.html")
     return result
 
-@app.route("/")
-def page_three():
-    result = render_template("page_three.html")
+@app.route("/national")
+def national():
+    result = render_template("national.html")
     return result
+
+@app.route("/city")
+def city():
+    result = render_template("city.html")
+    return result
+
 
 
 if __name__ == "__main__":
