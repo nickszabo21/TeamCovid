@@ -7,12 +7,12 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button"><b>Home</b></a>
+    <a href="{{ url_for('index') }}" class="w3-bar-item w3-button"><b>Home</b></a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="first.html" class="w3-bar-item w3-button">Global</a>
-      <a href="city.html" class="w3-bar-item w3-button">National</a>
-      <a href="national.html" class="w3-bar-item w3-button">Machine Learning</a>
+      <a href="{{ url_for('first') }}" class="w3-bar-item w3-button">Global</a>
+      <a href="{{ url_for('city') }}" class="w3-bar-item w3-button">National</a>
+      <a href="{{ url_for('national') }}" class="w3-bar-item w3-button">Machine Learning</a>
     </div>
   </div>
 </div>
@@ -24,7 +24,7 @@
   </p>
 </div>
 
-<img src= 'comp.png'>
+<img src= "static/comp.png">
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
   occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
