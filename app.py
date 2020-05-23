@@ -12,9 +12,9 @@ def index():
     result = render_template("index.html")
     return result
 
-@app.route("/global")
-def global():
-    result = render_template("global.html")
+@app.route("/first")
+def first():
+    result = render_template("first.html")
     return result
 
 @app.route("/national")
